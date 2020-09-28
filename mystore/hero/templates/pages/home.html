@@ -1,0 +1,27 @@
+{% extends "base_site.html" %}
+{% load i18n aws_images %}
+
+{% block main %}
+    <!-- CATEGORIES -->
+    {% include "components/categories.html" %}
+    
+    <!-- PRODUCTS -->
+    {% include "components/products.html" %}
+
+    <!-- BANNER -->
+    {% include "components/banner.html" %}
+    
+    <!-- TRENDS -->
+    {% include "components/trends.html" %}
+    
+    <!-- DISCOUNT -->
+    {% include "components/discount.html" %}
+        
+    <!-- SERVICES -->
+    {% include "components/services.html" %}
+{% endblock %}
+    
+{% block instagram %}
+    <!-- INSTAGRAM -->
+    {% include "project_components/instagram.html" %}
+{% endblock %}
