@@ -1,11 +1,11 @@
-{% extends "base_site.html" %}
+{% extends "base_shop.html" %}
 {% load i18n aws_images %}
 
 {% block breadcrumbs %}
     {% include "components/breadcrumbs.html" %}
 {% endblock %}
 
-{% block main %}
+{% block shop_app %}
     <section class="product-details spad">
         <div class="container">
             <div class="row">
@@ -283,4 +283,10 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block vuejs_scripts %}
+    {{ block.super }}
+    <!-- SHOP -->
+    {% include "vue/shop.html" %}
 {% endblock %}

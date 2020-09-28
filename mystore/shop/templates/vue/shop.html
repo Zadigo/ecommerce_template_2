@@ -1,0 +1,13 @@
+{% include "vue/components/interfaces.html" %}
+
+<script>
+    var shop = new Vue({
+        el: "#shop_app",
+        name: "Shop",
+        delimiters: ["[[", "]]"],
+        components: {
+            "product-interface": productinterface,
+            "products-interface": productsinterface
+        }
+    })
+</script>

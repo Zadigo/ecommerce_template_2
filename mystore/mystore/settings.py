@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'analytics',
     'django_extensions',
     'cart',
-    'store',
+    'shop',
     'hero',
     'customercare',
     'blog',
@@ -71,9 +72,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'analytics.context_processors.analytics'
             ],
             'libraries': {
-                'aws_images': 'templatetags.aws_images',
+                'aws_images': 'templatetags.aws_images'
             },
         },
     },

@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% load i18n static %}
+{% load i18n static google %}
 
 {% block navbar %}
     {% include "project_components/navs/nav.html" %}
+{% endblock %}
+
+{% block analytics %}
+    {% google_analytics %}
 {% endblock %}
 
 {% block instagram %}

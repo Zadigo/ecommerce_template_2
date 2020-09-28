@@ -12,15 +12,15 @@
                 <nav class="header__menu">
                     <ul>
                         <li class="active"><a href="{% url 'hero:home' %}">Home</a></li>
-                        <li><a href="{% url 'store:products' %}">Women’s</a></li>
-                        <li><a href="{% url 'store:products' %}">Men’s</a></li>
-                        <li><a href="{% url 'store:products' %}">Shop</a></li>
+                        <li><a href="{% url 'shop:products' %}">Women’s</a></li>
+                        <li><a href="{% url 'shop:products' %}">Men’s</a></li>
+                        <li><a href="{% url 'shop:products' %}">Shop</a></li>
                         <li>
                             <a href="#">
                                 Pages
                             </a>
                             <ul class="dropdown">
-                                <li><a href="{% url 'store:product' %}">Product Details</a></li>
+                                <li><a href="{% url 'shop:product' %}">Product Details</a></li>
                                 <li><a href="{% url 'cart:home' %}">Shop Cart</a></li>
                                 <li><a href="{% url 'cart:checkout' %}">Checkout</a></li>
                                 <li><a href="{% url 'blog:post' %}">Blog Details</a></li>

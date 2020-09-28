@@ -1,0 +1,13 @@
+{% extends "base_site.html" %}
+{% load i18n aws_images %}
+
+{% block main %}
+    <div id="shop_app">
+        {% block shop_app %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block vuejs_scripts %}
+    <!-- GLOBAL -->
+    {% include "vue/global.html" %}
+{% endblock %}

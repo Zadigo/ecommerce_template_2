@@ -1,0 +1,44 @@
+{% include "vue/components/products/item.html" %}
+
+<script>
+    var interfacemixins = {
+        
+    }
+</script>
+
+<script>
+    var productinterface = {
+        mixins: [interfacemixins]
+    }
+
+    var productsinterface = {
+        components: {
+            "product-card": productcard
+        },
+        template: `
+        <section class="shop spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <!-- FILTERS -->
+                        {% include "components/products/filters.html" %}
+                    </div>
+
+                    <div class="col-lg-9 col-md-9">
+                        <product-card :products="products" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        `,
+        mixins: [interfacemixins],
+        data() {
+            return {
+                products: []
+            }
+        },
+        beforeMount() {
+            this.products = {{ products|safe }}
+        }
+    }
+</script>

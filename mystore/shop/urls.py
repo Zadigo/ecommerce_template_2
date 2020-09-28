@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from store import views
+from shop import views
 
-app_name = 'store'
+app_name = 'shop'
 
 urlpatterns = [
     url(r'^single-product$', views.ProductView.as_view(), name='product'),
